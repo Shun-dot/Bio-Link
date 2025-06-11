@@ -31,6 +31,9 @@ body {
   -webkit-text-fill-color: transparent;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   z-index: -1;
+  align-items: center;
+  justify-content: center;
+  object-position: center;
   user-select: none;
 }
 
