@@ -1,3 +1,62 @@
+/* Responsif untuk perangkat dengan lebar layar kurang dari 768px */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .bg-text-animation {
+    font-size: 6rem;
+    top: 2rem;
+  }
+
+  .my-photo {
+    width: 8rem;
+  }
+
+  .sosmed {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sosmed a:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+  }
+}
+
+/* Responsif untuk perangkat dengan lebar layar kurang dari 480px */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .bg-text-animation {
+    font-size: 4rem;
+    top: 1rem;
+  }
+
+  .my-photo {
+    width: 6rem;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
+  .link-card {
+    padding: 0.75rem;
+    border-radius: 15px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,26 +74,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding-top: 4rem;
   padding-bottom: 2rem;
   gap: 1rem;
-}
-
-.bg-text-animation {
-  position: absolute;
-  top: 5rem;
-  font-size: 12rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  -webkit-text-stroke: 2px #4a4a7c;
-  -webkit-text-fill-color: transparent;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  z-index: -1;
-  align-items: center;
-  justify-content: center;
-  object-position: center;
-  user-select: none;
 }
 
 .my-photo {
@@ -112,12 +155,7 @@ ul.links li:not(:last-child) {
 
 .links .link-text {
   text-align: center;
-}
-
-.link-action {
-  color: #8787a3;
-  cursor: pointer;
-  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .copyright {
@@ -172,4 +210,16 @@ ul.links li:not(:last-child) {
   to {
     opacity: 0;
   }
+}
+.link-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 15px 0 #0f0f25;
+}
+
+.link-card:active {
+  transform: scale(0.95);
 }
